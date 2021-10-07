@@ -1,14 +1,24 @@
-# Project
+**AGDIAG**
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+    AGDiag diagnoses and reports failover and health events detected in the Cluster log of the primary replica.
 
-As the maintainer of this project, please make a few updates:
+    AGDIAG will detect and report on these issues:
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+       * Detect and analyze Cluster or SQL health issues that cause availability group to fail over or go offline.
+       * Detect and analyze Cluster or SQL health issues that cause SQL Failover Cluster Instance to fail over or go offline.
+       * Detect and analyze why availability group failed to failover to failover partner during manual or automatic failover attempt.
+
+**HOW TO USE**
+
+    1 Collect logs from the replica in the primary role when the health issue occurred using one of these tools:
+          SQL Log Scout, collect Scenario 0: Available on GitHub (https://github.com/microsoft/SQL_LogScout)
+          TSS, SQL Base Diagnostic collection: Available on GitHub (https://github.com/walter-1/TSS)
+          PSSDiag: Available on GitHub (https://github.com/microsoft/DiagManager/releases/)
+
+     2 Unzip the logs in a folder.
+
+     3 Launch AGDiag and select the log folder containing the unzipped logs.
+
 
 ## Contributing
 
