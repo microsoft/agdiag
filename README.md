@@ -1,23 +1,23 @@
 **AGDIAG**
 
-    AGDiag diagnoses and reports failover and health events detected in the Cluster log of the primary replica.
+       AGDiag diagnoses and reports failover and health events detected in the Cluster log of the primary replica.
 
-    AGDIAG will detect and report on these issues:
+       AGDIAG will detect and report on these issues:
 
-       * Detect and analyze Cluster or SQL health issues that cause availability group to fail over or go offline.
-       * Detect and analyze Cluster or SQL health issues that cause SQL Failover Cluster Instance to fail over or go offline.
-       * Detect and analyze why availability group failed to failover to failover partner during manual or automatic failover attempt.
+           * Detect and analyze Cluster or SQL health issues that cause availability group to fail over or go offline.
+           * Detect and analyze Cluster or SQL health issues that cause SQL Failover Cluster Instance to fail over or go offline.
+           * Detect and analyze why availability group failed to failover to failover partner during manual or automatic failover attempt.
 
 **HOW TO USE**
 
-    1 Collect logs from the replica in the primary role when the health issue occurred using one of these tools:
-          SQL Log Scout, collect Scenario 0: Available on GitHub (https://github.com/microsoft/SQL_LogScout)
-          TSS, SQL Base Diagnostic collection: Available on GitHub (https://github.com/walter-1/TSS)
-          PSSDiag: Available on GitHub (https://github.com/microsoft/DiagManager/releases/)
+      1 Collect logs from the replica in the primary role when the health issue occurred using one of these tools:
+              SQL Log Scout, collect Scenario 0: Available on GitHub (https://github.com/microsoft/SQL_LogScout)
+              TSS, SQL Base Diagnostic collection: Available on GitHub (https://github.com/walter-1/TSS)
+              PSSDiag: Available on GitHub (https://github.com/microsoft/DiagManager/releases/)
 
-     2 Unzip the logs in a folder.
+      2 Unzip the logs in a folder.
 
-     3 Launch AGDiag and select the log folder containing the unzipped logs.
+      3 Launch AGDiag and select the log folder containing the unzipped logs.
 
 
 ## Contributing
